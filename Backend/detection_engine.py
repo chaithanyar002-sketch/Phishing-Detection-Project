@@ -20,6 +20,7 @@ def extract_urls(text):
 
 def compute_score(keywords, urls):
     score = 0
+
     score += len(keywords) * 10
 
     if len(urls) > 0:
@@ -54,6 +55,7 @@ def calculate_risk(text):
     }
 
 
+# TEST CASE
 message = "Urgent! click http://bit.ly/login and enter OTP"
 
 result = calculate_risk(message)
